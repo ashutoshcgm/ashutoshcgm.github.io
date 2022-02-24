@@ -1,0 +1,28 @@
+.myclass1{
+    position: sticky;
+    width: 100%;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 0;padding: 0;
+}
+.myclass1:hover{
+    background-color: aqua;
+}
+.links{
+    display: inline;
+}
+.section{
+    width: 50%;
+    background-color: aqua;
+    float: left;
+}
+.aside{
+    width: 50%;
+    background-color: antiquewhite;
+    float: left;
+}
+.academic{
+    text-align: center;
+    text-decoration: wavy;
+    text-align: center;
+}
