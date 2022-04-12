@@ -5,234 +5,229 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infotainment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <title>Contact Us</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .contact {
-            position: relative;
-            min-height: 100vh;
-            padding: 50px 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background: url(contact.jpg);
-            background-size: cover;
-        }
-
-        .contact .content {
-            max-width: 800px;
-            text-align: center;
-        }
-
-        .contact .content h2 {
-            font-size: 36px;
-            font-weight: 500;
-            color: rgb(29, 97, 199);
-        }
-
-        .contact .content p {
-            font-weight: 400;
-            color: rgb(196, 48, 130);
-        }
-
-        .container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 30px;
-        }
-
-        .container .contactInfo {
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .container .contactInfo .box {
-            position: relative;
-            padding: 20px 0;
-            display: flex;
-        }
-
-        .container .contactInfo .box .icon {
-            min-width: 60px;
-            height: 60px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            font: size 22px;
-        }
-
-        .links {
-            text-decoration: none;
-            display: flex;
-            margin-top: 10px;
-            margin-left: 20px;
-            font-size: 16px;
-            color: rgb(6, 173, 171);
-            flex-direction: column;
-            font-weight: 700;
-        }
-
-        .contactForm {
-            width: 40%;
-            padding: 40px;
-            background: #fff
-        }
-
-        .contactForm h2 {
-            font-size: 30px;
-            color: #333;
-            font-weight: 500;
-        }
-
-        .contactForm .inputBox {
-            position: relative;
-            width: 100%;
-            margin-top: 10px;
-        }
-
-        .contactForm .inputBox input,
-        .contactForm .inputBox textarea {
-            width: 100%;
-            padding: 10px 0;
-            font-size: 16px;
-            margin: 10px 0;
-            border: none;
-            border-bottom: 2px solid #333;
-            outline: none;
-            resize: none;
-        }
-
-        .contactForm .inputBox span {
-            position: absolute;
-            left: 0;
-            padding: 5px 0;
-            font-size: 16px;
-            margin: 10px 0;
-            pointer-events: none;
-            transition: 0.5s;
-            color: #666;
-        }
-
-        .contactForm .inputBox input:focus~span,
-        .contactForm .inputBox input:valid~span,
-        .contactForm .inputBox textarea:focus~span,
-        .contactForm .inputBox textarea:valid~span {
-            color: #e91e63;
-            font-size: 16px;
-            transform: translateY(-20px);
-        }
-
-        .contactForm .inputBox input[type="submit"] {
-            width: 100px;
-            background: #00bcd4;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            padding: 10px;
-            font-size: 18px;
-        }
-
-        @media(max-width:991px) {
-            .contact {
-                padding: 50px;
-            }
-
-            .container {
-                flex-direction: column;
-            }
-
-            .container .contactInfo {
-                width: 100%;
-                margin: 40px;
-                /* display: flex;
-                justify-content: center; */
-                align-items: center;
-                display: inline-block;
-            }
-
-            .contactForm {
-                width: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
 </head>
 
 <body>
-    <section class="contact">
-        <div class="content">
-            <h2>Contact Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate accusantium porro possimus suscipit
-                deserunt qui, voluptatem non aut odit quas rem distinctio id expedita, iure dolorum earum necessitatibus
-                ratione ea. Dolor labore itaque explicabo delectus!</p>
+    <nav class="navbar navbar-dark bg-dark fixed-top" id="navbarhai">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="docdram">DocDram</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">DocDram</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"
+                        id="close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="color:rgb(44, 155, 161);">Home</a>
+                        </li> -->
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(44, 155, 161);">Movies</a>
+                        </li>
+                         -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(67, 125, 212);">
+                                <i class="fa-solid fa-video"></i> Movies
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="movies">
+                                <li><a class="dropdown-item" href="#" style="color:rgb(182, 26, 127);" id="b1"><i
+                                            class="bi bi-camera-fill"></i> BollyWood</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(182, 26, 127);" id="h1"><i
+                                            class="bi bi-camera2"></i> Hollywood</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(182, 26, 127);" id="o1"><i
+                                            class="bi bi-camera-reels"></i> Others</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(16, 125, 78);">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(44, 155, 161);">Songs</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(67, 125, 212);">
+                                <i class="fas fa-music"></i> Songs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="songs">
+                                <li><a class="dropdown-item" href="#" style="color:rgb(30, 182, 116);" id="s1"><i
+                                            class="bi bi-file-music"></i> Hindi</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(30, 182, 116);" id="s2"><i
+                                            class="bi bi-file-earmark-play"></i> Punjabi</a></li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(30, 182, 116)" id="s3"><i
+                                            class="bi bi-disc"></i> English</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(16, 125, 78);">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#" style="color:rgb(44, 155, 161);">Sports</a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(67, 125, 212);">
+                                <i class="fas fa-running"></i> Sports
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="sports">
+                                <li><a class="dropdown-item" href="#" style="color:rgb(205, 189, 44);" id="sp1"><span
+                                            class="iconify" data-icon="mdi:cricket" data-rotate="90deg"
+                                            data-flip="horizontal"></span> Cricket</a></li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(205, 189, 44);" id="sp1"><i
+                                            class='far fa-futbol'></i> Football</a></li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(205, 189, 44);" id="sp1"><i
+                                            class='fas fa-baseball-ball'></i> Tennis</a></li>
+                                <!-- <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#" style="color:rgb(16, 125, 78);">Something else here</a></li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                </div>
+            </div>
         </div>
+    </nav>
+
+    <h1 class="display-5" id="head1">Welcome to DocDram</h1>
+    <div class="movies" id="moviesection">
+        <h5 class="movieheader">Movies</h5>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis maiores magnam temporibus similique? Magnam
+        reiciendis est reprehenderit dolorem tempore ullam ut exercitationem dolores ex fugiat, sint architecto odio
+        ipsam. Recusandae dolorum eius a pariatur fuga, molestiae earum dolorem autem optio? Voluptatibus nemo veniam
+        ratione dolorum sequi velit quas ipsum et.
+        <br>
+        <br>
+        <p class="movietrendpara">
+            Trending Movies
+        </p>
+        <ul id="trendmovie">
+            <li class="moviehover">An item</li>
+            <li class="moviehover">A second item</li>
+            <li class="moviehover">A third item</li>
+            <li class="moviehover">A fourth item</li>
+            <li class="moviehover">And a fifth one</li>
+        </ul>
+        <a href="#" class="link-danger" id="changeHover1"><i class="bi bi-box-arrow-right"></i> More</a>
+    </div>
+
+    <div class="songs" id="songsection">
+        <h5 class="songheader">Songs</h5>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis maiores magnam temporibus similique? Magnam
+        reiciendis est reprehenderit dolorem tempore ullam ut exercitationem dolores ex fugiat, sint architecto odio
+        ipsam. Recusandae dolorum eius a pariatur fuga, molestiae earum dolorem autem optio? Voluptatibus nemo veniam
+        ratione dolorum sequi velit quas ipsum et.
+        <br>
+        <br>
+        <p class="songtrendpara">
+            Trending Songs
+        </p>
+        <ul id="trendsong">
+            <li class="songhover">An item</li>
+            <li class="songhover">A second item</li>
+            <li class="songhover">A third item</li>
+            <li class="songhover">A fourth item</li>
+            <li class="songhover">And a fifth one</li>
+        </ul>
+        <a href="#" class="link-warning" id="changeHover2"><i class="bi bi-box-arrow-right"></i> More</a>
+    </div>
+
+    <div class="sports" id="sportssection">
+        <h5 class="sportsheader">Sports</h5>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis maiores magnam temporibus similique? Magnam
+        reiciendis est reprehenderit dolorem tempore ullam ut exercitationem dolores ex fugiat, sint architecto odio
+        ipsam. Recusandae dolorum eius a pariatur fuga, molestiae earum dolorem autem optio? Voluptatibus nemo veniam
+        ratione dolorum sequi velit quas ipsum et.
+        <br>
+        <br>
+        <p class="sportstrendpara">
+            Trending Sports News
+        </p>
+        <ul id="trendsports">
+            <li class="sportshover">An item</li>
+            <li class="sportshover">A second item</li>
+            <li class="sportshover">A third item</li>
+            <li class="sportshover">A fourth item</li>
+            <li class="sportshover">And a fifth one</li>
+        </ul>
+        <a href="#" class="link-info" id="changeHover3"><i class="bi bi-box-arrow-right"></i>
+            More</a>
+    </div>
+
+    <footer class="footer">
         <div class="container">
-            <div class="contactInfo">
-                <div class="box">
-                    <div class="icon"><i class="bi bi-facebook" style="color:blue ;"></i></div>
-                    <div class="text">
-                        <h3><a href="#" class="links">Facebook</a></h3>
-                    </div>
+            <div class="row">
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-building"></i> Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#" target="_blank">Contact Us</a></li>
+                    </ul>
                 </div>
-                <div class="box">
-                    <div class="icon"><i class="bi bi-twitter" style="color:dodgerblue"></i></div>
-                    <div class="text">
-                        <h3><a href="#" class="links">Twitter</a></h3>
-                    </div>
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-magnifying-glass-plus"></i> Go to</h4>
+                    <ul>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Songs</a></li>
+                        <li><a href="#">Sports</a></li>
+                    </ul>
                 </div>
-                <div class="box">
-                    <div class="icon"><i class="bi bi-instagram" style="color: hotpink;"></i></div>
-                    <div class="text">
-                        <h3><a href="#" class="links">Instagram</a></h3>
-                    </div>
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-angles-right"></i> Extra</h4>
+                    <ul>
+                        <li><a href="#">Rate Movie and Give Review</a></li>
+                        <li><a href="#">Low Cost Travel-Alpha Guiders</a></li>
+                        <li><a href="#">Get Help</a></li>
+                    </ul>
                 </div>
-                <div class="box">
-                    <div class="icon"><i class="bi bi-linkedin" style="color:royalblue"></i></div>
-                    <div class="text">
-                        <h3><a href="#" class="links">LinkedIn</a></h3>
-                    </div>
+                <div class="footer-col">
+                    <h4><i class="fa-solid fa-link"></i> Follow Us</h4>
+                    <ul>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </ul>
                 </div>
-            </div>
-            <div class="contactForm">
-                <form action="">
-                    <h2>Send Message</h2>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Full Name</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="text" name="" required="required">
-                        <span>Email</span>
-                    </div>
-                    <div class="inputBox">
-                        <input type="number" name="" required="required">
-                        <span>Mobile Number</span>
-                    </div>
-                    <div class="inputBox">
-                        <textarea required="required" "></textarea>
-                        <span>Enter Your Message</span>
-                    </div>
-                    <div class=" inputBox">
-                        <input type="submit" name="" value="Send" id="Send">
-                    </div>
-                </form>
             </div>
         </div>
-    </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
