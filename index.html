@@ -91,17 +91,17 @@
                         </li> -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(67, 125, 212);">
-                                <i class="fas fa-running"></i> Sports
+                                data-bs-toggle="dropdown" aria-expanded="false" style="color:rgb(67, 125, 212);"><i
+                                    class="bi bi-newspaper"></i>
+                                News
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown" id="sports">
-                                <li><a class="dropdown-item" href="#" style="color:rgb(205, 189, 44);" id="sp1"><span
-                                            class="iconify" data-icon="mdi:cricket" data-rotate="90deg"
-                                            data-flip="horizontal"></span> Cricket</a></li>
-                                <li><a class="dropdown-item" href="#" style="color:rgb(205, 189, 44);" id="sp1"><i
-                                            class='far fa-futbol'></i> Football</a></li>
-                                <li><a class="dropdown-item" href="#" style="color:rgb(205, 189, 44);" id="sp1"><i
-                                            class='fas fa-baseball-ball'></i> Tennis</a></li>
+                                <li><a class="dropdown-item" href="#sp1" style="color:rgb(205, 189, 44);" id="sp1"><i
+                                            class="bi bi-briefcase-fill"></i></span> Business</a></li>
+                                <li><a class="dropdown-item" href="#sp2" style="color:rgb(205, 189, 44);" id="sp2"><i
+                                            class="fas fa-running"></i> Sports</a></li>
+                                <li><a class="dropdown-item" href="#sp3" style="color:rgb(205, 189, 44);" id="sp3"><i
+                                            class="bi bi-motherboard"></i> Technology</a></li>
                                 <!-- <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -117,7 +117,6 @@
             </div>
         </div>
     </nav>
-
     <h1 class="display-5" id="head1">Welcome to DocDram</h1>
     <div class="movies" id="moviesection">
         <h5 class="movieheader">Movies</h5>
@@ -137,7 +136,7 @@
             <li class="moviehover">RRR</li>
             <li class="moviehover">Attack: Part 1</li>
         </ul>
-        <a href="#" class="link-danger" id="changeHover1"><i class="bi bi-box-arrow-right"></i> More</a>
+        <a href="#" class="link-danger" id="changeHover1"><i class="bi bi-box-arrow-right"></i> All Movies</a>
     </div>
 
     <div class="songs" id="songsection">
@@ -158,11 +157,11 @@
             <li class="songhover">A fourth item</li>
             <li class="songhover">And a fifth one</li>
         </ul>
-        <a href="#" class="link-warning" id="changeHover2"><i class="bi bi-box-arrow-right"></i> More</a>
+        <a href="#" class="link-warning" id="changeHover2"><i class="bi bi-box-arrow-right"></i>All Songs</a>
     </div>
 
     <div class="sports" id="sportssection">
-        <h5 class="sportsheader">Sports</h5>
+        <h5 class="sportsheader">News</h5>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis maiores magnam temporibus similique? Magnam
         reiciendis est reprehenderit dolorem tempore ullam ut exercitationem dolores ex fugiat, sint architecto odio
         ipsam. Recusandae dolorum eius a pariatur fuga, molestiae earum dolorem autem optio? Voluptatibus nemo veniam
@@ -170,7 +169,7 @@
         <br>
         <br>
         <p class="sportstrendpara">
-            Trending Sports News
+            Trending News
         </p>
         <ul id="trendsports">
             <li class="sportshover">An item</li>
@@ -179,10 +178,15 @@
             <li class="sportshover">A fourth item</li>
             <li class="sportshover">And a fifth one</li>
         </ul>
-        <a href="#" class="link-info" id="changeHover3"><i class="bi bi-box-arrow-right"></i>
-            More</a>
+        <a href="https://ashutoshcgm.github.io/DocDram-News.html" class="link-info" id="changeHover3"><i class="bi bi-box-arrow-right"></i>
+            All News</a>
     </div>
-
+    <div class="container-fluid m-0 p-0">
+        <div>
+            <div class="row m-3" id="newsType"></div>
+            <div class="row me-2 ms-2" id="newsDetails"></div>
+        </div>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -199,15 +203,15 @@
                     <ul>
                         <li><a href="#">Movies</a></li>
                         <li><a href="#">Songs</a></li>
-                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">News</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4><i class="fa-solid fa-angles-right"></i> Extra</h4>
                     <ul>
                         <li><a href="#" target="_blank">Rate Movie & Give Review</a></li>
-                        <li><a href="#" target="_blank">AlphaGuiders:BudgetTravel</a></li>
-                        <li><a href="#" >Get Help</a></li>
+                        <li><a href="#" target="_blank">Tourism in INDIA</a></li>
+                        <li><a href="#">Get Help</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -215,15 +219,20 @@
                     <ul>
                         <div class="social-links">
                             <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://mobile.twitter.com/ashutosh_cgm" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/ashutosh_cgm" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/in/imsashutoshsingh" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://mobile.twitter.com/ashutosh_cgm" target="_blank"><i
+                                    class="fa-brands fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/ashutosh_cgm" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/imsashutoshsingh" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
